@@ -1,0 +1,25 @@
+﻿@model GasCar
+
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img src=@Model.ImageUrl class="card-img-top" alt=@Model.Make>
+        <div class="card-body">
+            <h5 class="card-title">@Model.Make @Model.Model @Model.Year</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Details</h6>
+            <p class="card-text">
+                <ul>
+                    <li>MPG City/Hwy : @Model.CityMPG / @Model.HwyMPG</li>
+                    <li>@Model.NumberOfDoors Doors</li>
+                    <li>Color : @Model.Color</li>
+                </ul>
+            </p>
+
+        </div>
+    </div>
+
+    <div>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Car" asp-action="Index">Back</a>
+    </div>
+
+</div>
